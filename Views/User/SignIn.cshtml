@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model MarketPlaceApp.Models.User 
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input asp-for=Email type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input asp-for=password type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        @* <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> *@
+        <button asp-action="Auth" asp-controller="User" type="submit" class="btn btn-primary mt-2">Submit</button>
+        <a class="btn btn-secondary mt-2" asp-action="SignUp" asp-controller="User">Register Now</a>
+
+    </form>
+
+    
+</div>

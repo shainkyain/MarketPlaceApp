@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "Name": "Alice",
+    "Email": "alice@example.com",
+    "password": "alice",
+    "mobile": "1234567890",
+    "Role": "Admin"
+  },
+  {
+    "Id": 2,
+    "Name": "Bob",
+    "Email": "bob@example.com",
+    "password": "bobPass",
+    "mobile": "0987654321",
+    "Role": "Admin"
+  },
+  {
+    "Id": 3,
+    "Name": "Charlie",
+    "Email": "charlie@example.com",
+    "password": "charlie",
+    "mobile": "1122334455",
+    "Role": "User"
+  },
+  {
+    "Id": 4,
+    "Name": "David",
+    "Email": "david@example.com",
+    "password": "davidPass",
+    "mobile": "2233445566",
+    "Role": "Admin"
+  },
+  {
+    "Id": 5,
+    "Name": "Eve",
+    "Email": "eve@example.com",
+    "password": "evePass",
+    "mobile": "3344556677",
+    "Role": "User"
+  },
+  {
+    "Id": 6,
+    "Name": "Frank",
+    "Email": "frank@example.com",
+    "password": "frankPass",
+    "mobile": "4455667788",
+    "Role": "Admin"
+  },
+  {
+    "Id": 7,
+    "Name": "Grace",
+    "Email": "grace@example.com",
+    "password": "gracePass",
+    "mobile": "5566778899",
+    "Role": "User"
+  },
+  {
+    "Id": 8,
+    "Name": "Hank",
+    "Email": "hank@example.com",
+    "password": "hankPass",
+    "mobile": "6677889900",
+    "Role": "Admin"
+  },
+  {
+    "Id": 9,
+    "Name": "Ivy",
+    "Email": "ivy@example.com",
+    "password": "ivyPass",
+    "mobile": "7788990011",
+    "Role": "User"
+  },
+  {
+    "Id": 10,
+    "Name": "Jack",
+    "Email": "jack@example.com",
+    "password": "jackPass",
+    "mobile": "8899001122",
+    "Role": "Admin"
+  },
+  {
+    "Id": 11,
+    "Name": "d",
+    "Email": "d@gmail.com",
+    "password": "1234",
+    "mobile": "8888888888",
+    "Role": "User"
+  },
+  {
+    "Id": 12,
+    "Name": "me",
+    "Email": "me@gmail.com",
+    "password": "1234",
+    "mobile": "8888888888",
+    "Role": "User"
+  }
+]

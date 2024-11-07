@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "Name": "Lap",
+    "Description": "High performance lap",
+    "Rating": 5,
+    "price": 999.99,
+    "ImageURL": "https://betanews.com/wp-content/uploads/2014/11/front-scaled.jpg"
+  },
+  {
+    "Id": 2,
+    "Name": "Smartphone",
+    "Description": "Latest model smartphone",
+    "Rating": 5,
+    "price": 701.99,
+    "ImageURL": "https://th.bing.com/th/id/OIP.-quGE5cEMqVRdl6i20GOggHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "Id": 3,
+    "Name": "Headphones",
+    "Description": "Noise-cancelling",
+    "Rating": 5,
+    "price": 199.99,
+    "ImageURL": "https://th.bing.com/th/id/R.74379ebc69f670571055fea9e6233123?rik=WdYAIlWqy7nuwQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2fheadphones%2fheadphones_PNG7638.png&ehk=PiuosP72OiRGaettuIxzhQKpVMXIXYMc7wnQPx84DvY%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    "Id": 4,
+    "Name": "Smartwatch",
+    "Description": "Smartwatch with various features",
+    "Rating": 5,
+    "price": 249.99,
+    "ImageURL": "https://th.bing.com/th/id/OIP.uMmJvI4I2B1w9Z80ThC-wwHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "Id": 5,
+    "Name": "Tablet",
+    "Description": "Portable and powerful tablet",
+    "Rating": 4,
+    "price": 399.99,
+    "ImageURL": "https://th.bing.com/th/id/OIP.tIAJ6rZUzydnTz0t3s6aqAHaFg?rs=1&pid=ImgDetMain"
+  },
+  {
+    "Id": 6,
+    "Name": "Camera",
+    "Description": "High resolution digital camera",
+    "Rating": 5,
+    "price": 499.99,
+    "ImageURL": "https://th.bing.com/th/id/OIP.FMwWdTulrv36Wf022uD-NQHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "Id": 7,
+    "Name": "Wireless Charger",
+    "Description": "Fast wireless charging pad",
+    "Rating": 4,
+    "price": 49.99,
+    "ImageURL": "https://www.bhphotovideo.com/images/images2500x2500/belkin_f7u027dqwht_boostup_wireless_charging_pad_1377117.jpg"
+  },
+  {
+    "Id": 8,
+    "Name": "Bluetooth Speaker",
+    "Description": "Portable Bluetooth speaker",
+    "Rating": 5,
+    "price": 89.99,
+    "ImageURL": "https://th.bing.com/th/id/OIP.R6Ic0BwgKDJo-EOfkCKHtwHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "Id": 9,
+    "Name": "Keyboard",
+    "Description": "Mechanical keyboard with RGB lighting",
+    "Rating": 4,
+    "price": 79.99,
+    "ImageURL": "https://media.gamestop.com/i/gamestop/11155920_ALT01/Razer-BlackWidow-V3-Mini-HyperSpeed-65-Percent-Wireless-Green-Switch-Mechanical-Gaming-Keyboard-Black-with-Chroma-RGB?fmt=auto"
+  },
+  {
+    "Id": 10,
+    "Name": "Mouse",
+    "Description": "Ergonomic wireless mouse",
+    "Rating": 4,
+    "price": 39.99,
+    "ImageURL": "https://www.takeaseat.sg/wp-content/uploads/2021/03/Logitech-MX-Ergo-Vertical-Wireless-Ergonomic-Mouse-3.jpg"
+  },
+  {
+    "Id": 11,
+    "Name": "HeadPhones",
+    "Description": "Full Size Wireless HeadPhone",
+    "Rating": 4,
+    "price": 125.0,
+    "ImageURL": "https://th.bing.com/th/id/R.74379ebc69f670571055fea9e6233123?rik=WdYAIlWqy7nuwQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2fheadphones%2fheadphones_PNG7638.png&ehk=PiuosP72OiRGaettuIxzhQKpVMXIXYMc7wnQPx84DvY%3d&risl=&pid=ImgRaw&r=0"
+  }
+]
