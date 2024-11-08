@@ -12,7 +12,11 @@
 }
 @if (role == "Admin")
 {
+    <div>
     <a class="btn btn-primary" asp-action="CreateProduct" asp-controller="Product">Add New Product</a>
+    <a class="btn btn-primary" asp-action="AllUserList" asp-controller="User">List of All Users</a>
+    
+    </div>
 }
 
 <div class="container">

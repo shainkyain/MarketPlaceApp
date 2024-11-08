@@ -10,12 +10,18 @@ namespace MarketPlaceApp.Controllers
 
         public IActionResult AllUserList()
         {
+            var role = HttpContext.Session.GetString("LoggedUserRole");
+            if(role != "Admin")
+            {
+                return RedirectToAction("SomethingWentWrong", "Home");
+            }
             List<User> allUsers = userService.GetAllUsers();
             return View(allUsers);
         }
 
         public IActionResult SignIn()
         {
+           
             return View();
         }
         public IActionResult Auth(User user)
@@ -32,7 +38,7 @@ namespace MarketPlaceApp.Controllers
                 
                  
             }
-
+            TempData["Message"] = "Enter Valid Credentials";
             return RedirectToAction("SignIn", "User");
         }
 
@@ -43,9 +49,33 @@ namespace MarketPlaceApp.Controllers
 
         public IActionResult CreateUser(User user)
         {
-            userService.AddUser(user);
-            return RedirectToAction("SignIn", "User");
+            if (user.mobile.Length == 10 && user.password.Length >= 8 && user.Name.Length >= 3)
+            {
+
+                userService.AddUser(user);
+                return RedirectToAction("SignIn", "User");
+
+            }
+            TempData["Message"] = "Something Went Wrong Please ReEnter Correct values to each Input";
+            return RedirectToAction("SignUp", "User");
         }
+
+        public IActionResult ChangeRoleFunction(int id)
+        {
+           User user =  userService.GetAllUsers().FirstOrDefault(user => user.Id == id);
+            userService.ChangeRole(user);
+            return RedirectToAction("AllUserList", "User");
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         public IActionResult Logout()
@@ -53,6 +83,7 @@ namespace MarketPlaceApp.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("SignIn", "User");
         }
+
 
         
 

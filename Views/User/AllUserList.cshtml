@@ -4,6 +4,8 @@
 @{
 }
 
+
+
 @model List<MarketPlaceApp.Models.User> 
 
 <table class="table">
@@ -13,6 +15,8 @@
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">mobile</th>
+            <th scope="col">Role</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -23,6 +27,9 @@
             <td>@user.Name</td>
             <td>@user.Email</td>
             <td>@user.mobile</td>
+            <td>@user.Role</td>
+            <td><a asp-action="ChangeRoleFunction" asp-controller="User" asp-route-id="@user.Id">Change Role</a></td>
+
         </tr>
         }
     </tbody>

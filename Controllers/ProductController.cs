@@ -12,24 +12,20 @@ namespace MarketPlaceApp.Controllers
             List<Product> allProducts = productService.GetAllProduct();
             return View(allProducts);
         }
-
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="id"></param>
+      /// <returns></returns>
         public IActionResult ProductPage(int id)
         {
             Product Product = productService.GetAllProduct().FirstOrDefault(u => u.Id == id);
-
-            if (Product == null)
-            {
-                return NotFound();
-            }
-
+            if (Product == null) return NotFound();
             return View(Product);
-
         }
         public IActionResult EditProduct(int id)
         {
-            var user = HttpContext.Session.GetString("LoggedUserRole");
-
-            if (user != "Admin") { return RedirectToAction("SomethingWentWrong", "Home"); }
+            if (HttpContext.Session.GetString("LoggedUserRole") != "Admin") { return RedirectToAction("SomethingWentWrong", "Home"); }
 
             Product product = productService.GetAllProduct().FirstOrDefault(u => u.Id == id);
             return View(product);
@@ -55,13 +51,14 @@ namespace MarketPlaceApp.Controllers
             }
             return View();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
         public IActionResult CreateProductMethod(Product product)
         {
-            if (product == null)
-            {
-                return RedirectToAction("SomethingWentWrong", "Home");
-            }
+            if (product == null)  return RedirectToAction("SomethingWentWrong", "Home");            
             productService.AddProduct(product);
             return RedirectToAction("AllProductList", "Product");
         }

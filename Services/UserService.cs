@@ -27,6 +27,18 @@ namespace MarketPlaceApp.Services
             SaveUsers(allUsers);
         }
 
+        public void ChangeRole(User user)
+        {
+            var allUsers = GetAllUsers();
+            User userToUpdate = allUsers.FirstOrDefault(u => u.Id == user.Id);
+            var role = userToUpdate.Role;
+           
+            if(role == "User") { 
+            userToUpdate.Role = "Admin";
+            }else userToUpdate.Role = "User";
+            SaveUsers(allUsers);
+        }
+
         private void SaveUsers(List<User> allUsers)
         {
             var jsonData = JsonConvert.SerializeObject(allUsers, Formatting.Indented);

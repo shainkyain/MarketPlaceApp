@@ -13,7 +13,7 @@
     "Email": "bob@example.com",
     "password": "bobPass",
     "mobile": "0987654321",
-    "Role": "Admin"
+    "Role": "User"
   },
   {
     "Id": 3,
@@ -45,7 +45,7 @@
     "Email": "frank@example.com",
     "password": "frankPass",
     "mobile": "4455667788",
-    "Role": "Admin"
+    "Role": "User"
   },
   {
     "Id": 7,
@@ -92,6 +92,54 @@
     "Name": "me",
     "Email": "me@gmail.com",
     "password": "1234",
+    "mobile": "8888888888",
+    "Role": "User"
+  },
+  {
+    "Id": 13,
+    "Name": "Alice",
+    "Email": "alice1@gmail.com",
+    "password": "alice",
+    "mobile": "8888888888",
+    "Role": "User"
+  },
+  {
+    "Id": 14,
+    "Name": null,
+    "Email": "sss@example.com",
+    "password": "ss",
+    "mobile": "sssss",
+    "Role": "User"
+  },
+  {
+    "Id": 15,
+    "Name": "ssss",
+    "Email": "d@gmail.com",
+    "password": "1234",
+    "mobile": "888",
+    "Role": "User"
+  },
+  {
+    "Id": 16,
+    "Name": "sss",
+    "Email": "jaa@gmail.com",
+    "password": "aaaaaaaa",
+    "mobile": "888888",
+    "Role": "User"
+  },
+  {
+    "Id": 17,
+    "Name": "dddd",
+    "Email": "d@gmail.com",
+    "password": "aaaaaaaa",
+    "mobile": "8888888888",
+    "Role": "User"
+  },
+  {
+    "Id": 18,
+    "Name": "dddd",
+    "Email": "ssa@gmail.com",
+    "password": "aaaaaaaaa",
     "mobile": "8888888888",
     "Role": "User"
   }

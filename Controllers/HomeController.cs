@@ -13,16 +13,6 @@ namespace MarketPlaceApp.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult SomethingWentWrong()
         {
             return View();
