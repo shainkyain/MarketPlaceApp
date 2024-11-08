@@ -5,7 +5,23 @@ namespace MarketPlaceApp.Services
 {
     public class UserService
     {
-        private readonly string _filepath = "C:\\Users\\Trainee\\Desktop\\c#\\MarketPlaceApp\\wwwroot\\js\\Users.json";
+
+        private readonly string _filepath;
+        public UserService()
+        {
+            _filepath = FindJsonFilePath();
+        }
+        private string FindJsonFilePath() 
+        { string currentDirectory = Directory.GetCurrentDirectory();
+            string[] files = Directory.GetFiles(currentDirectory, "Users.json", SearchOption.AllDirectories);
+            if (files.Length > 0) 
+            { return files[0];
+            } else 
+            {
+                throw new FileNotFoundException("Users.json file not found."); }
+        }
+
+        // private readonly string _filepath = "C:\\Users\\Trainee\\Desktop\\c#\\MarketPlaceApp\\wwwroot\\js\\Users.json";
 
         public List<User> GetAllUsers()
         {

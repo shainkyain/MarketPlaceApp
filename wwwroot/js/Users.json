@@ -13,7 +13,7 @@
     "Email": "bob@example.com",
     "password": "bobPass",
     "mobile": "0987654321",
-    "Role": "User"
+    "Role": "Admin"
   },
   {
     "Id": 3,

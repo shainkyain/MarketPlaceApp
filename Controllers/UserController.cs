@@ -66,18 +66,7 @@ namespace MarketPlaceApp.Controllers
             userService.ChangeRole(user);
             return RedirectToAction("AllUserList", "User");
         }
-
-
-
-
-
-
-
-
-
-
-
-
+ 
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
